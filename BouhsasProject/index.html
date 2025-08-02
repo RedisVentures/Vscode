@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Présentation des Groupes</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Arial', sans-serif;
+        }
+        .card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .card-title {
+            color: #2c3e50;
+            font-weight: bold;
+        }
+        .card-subtitle {
+            color: #7f8c8d;
+        }
+        .btn-primary {
+            background-color: #3498db;
+            border: none;
+            border-radius: 5px;
+            padding: 8px 16px;
+            font-size: 14px;
+        }
+        .btn-primary:hover {
+            background-color: #2980b9;
+        }
+        h1, h2 {
+            color: #34495e;
+            font-weight: bold;
+        }
+        #presentation {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 30px;
+        }
+        #presentation-title {
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        .img-fluid {
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .position-absolute {
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body class="container mt-5">
+
+    <!-- Logo in the top-right corner -->
+    <div class="position-absolute top-0 end-0 m-3">
+        <a target="_blank">
+            <img src="logos.png" alt="OFPPT Logo" width="100" style="pointer-events: none;">
+        </a>
+    </div>
+
+    <!-- Title: "Module Soft Skills By Mr. Bouhsas" -->
+    <h2 class="text-center mb-4">Module Soft Skills By Mr. Bouhsas</h2>
+
+    <!-- Smaller group image -->
+    <img src="https://t4.ftcdn.net/jpg/07/71/14/91/360_F_771149141_WF6E8QlDbKfgC7ufsdI2qony8ofWBTFF.jpg" alt="Image de groupe" class="img-fluid d-block mx-auto my-4" width="800">
+
+    <h1 class="text-center mb-5">Présentation des Groupes</h1>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+        <!-- Groupe 1 -->
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Groupe 1</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Sujet: Efficacité Relationnelle dans le Milieu du Travail</h6>
+                    <ul class="list-unstyled">
+                        <li>Chawki Benhami</li>
+                        <li>Salim Ech-chahedy </li>
+                        <li>Hayati yassir</li>
+                        <li>Imrane Chabane</li>
+                        <li>Dakhch Abdelhadi</li>
+                    </ul>
+                    <button class="btn btn-primary w-100" onclick="showPresentation(1)">Voir la présentation</button>
+                </div>
+            </div>
+        </div>
+        <!-- Groupe 2 -->
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Groupe 2</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Sujet: Time Management</h6>
+                    <ul class="list-unstyled">
+                        <li>DEBLAOUI MOHAMMED AMINE</li>
+                        <li>BASKIKI ZINEDINE</li>
+                        <li>ESSMAKI MAROUA</li>
+                        <li>MAAGOUL AYA</li>
+                        <li>MAACHE RAJAE</li>
+                    </ul>
+                    <button class="btn btn-primary w-100" onclick="showPresentation(2)">Voir la présentation</button>
+                </div>
+            </div>
+        </div>
+        <!-- Groupe 3 -->
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Groupe 3</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Sujet: Adaptabilité</h6>
+                    <ul class="list-unstyled">
+                        <li>Maroua Bidida</li>
+                        <li>Meryem Naimi</li>
+                        <li>Imrane Ait Alla</li>
+                        <li>Hamza El Abbar</li>
+                        <li>Ayoub Benassaoui</li>
+                    </ul>
+                    <button class="btn btn-primary w-100" onclick="showPresentation(3)">Voir la présentation</button>
+                </div>
+            </div>
+        </div>
+        <!-- Groupe 4 -->
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Groupe 4</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Sujet: Intelligence Artificielle</h6>
+                    <ul class="list-unstyled">
+                        <li>Monyr Aymen</li>
+                        <li>Amri Marouane</li>
+                        <li>Ahouiss Adam</li>
+                        <li>Montaser</li>
+                    </ul>
+                    <button class="btn btn-primary w-100" onclick="showPresentation(4)">Voir la présentation</button>
+                </div>
+            </div>
+        </div>
+        <!-- Groupe 5 -->
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Groupe 5</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Sujet: Gestion de Projet</h6>
+                    <ul class="list-unstyled">
+                        <li>Étudiant P</li>
+                        <li>Étudiant Q</li>
+                        <li>Étudiant R</li>
+                    </ul>
+                    <button class="btn btn-primary w-100" onclick="showPresentation(5)">Voir la présentation</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PowerPoint Viewer -->
+    <div id="presentation" class="mt-5" style="display: none;">
+        <h2 id="presentation-title" class="text-center mb-4"></h2>
+        <iframe id="pptViewer" src="" width="100%" height="600px" style="border: none;"></iframe>
+    </div>
+        <div class="text-center mt-3">
+            <a id="downloadButton" href="#" class="btn btn-success" download style="display: none;">📥 Télécharger la présentation</a>
+        </div>
+    </div>
+    <!-- Dynamically load saved content -->
+    <div id="dynamic-content">
+            <?php include("saved_code.html"); ?>
+        </div>
+    <script>
+        function showPresentation(group) {
+            const presentations = {
+                1: { 
+                    title: "Présentation Groupe 1 - Efficacité Relationnelle dans le Milieu du Travail", 
+                    file: "https://www.dropbox.com/scl/fi/4pmno9wdlkg9bbl58tkmv/travailLO-2.pptx?rlkey=liux3002vy8je30nc7zow48zm&st=993d9exr&raw=1" 
+                },
+                2: { 
+                    title: "Présentation Groupe 2 - Time Management", 
+                    file: "https://www.dropbox.com/scl/fi/y1slk8fod167tfkbw9u4s/Time_Management.pptx?rlkey=cbsvgu309lwinybw2drh6iue3&st=i5zq1dt6&raw=1" 
+                },
+                3: { 
+                    title: "Présentation Groupe 3 - Adaptabilité", 
+                    file: "https://www.dropbox.com/scl/fi/88koc9ruitpc34amha6ta/Pr-sentationbouhas.pptx?rlkey=1fqj9srbdye6eern64dr0wdqy&st=npmn96mn&raw=1" 
+                },
+                4: { 
+                    title: "Présentation Groupe 4 - Intelligence Artificielle", 
+                    file: "https://yourwebsite.com/presentation4.pptx" 
+                },
+                5: { 
+                    title: "Présentation Groupe 5 - Gestion de Projet", 
+                    file: "https://yourwebsite.com/presentation5.pptx" 
+                }
+            };
+
+            document.getElementById("presentation-title").innerText = presentations[group].title;
+            document.getElementById("pptViewer").src = `https://view.officeapps.live.com/op/embed.aspx?src=${encodeURIComponent(presentations[group].file)}`;
+            document.getElementById("presentation").style.display = "block";
+            // Scroll to the presentation section
+            document.getElementById("presentation").scrollIntoView({ behavior: 'smooth' });
+            const downloadButton = document.getElementById("downloadButton");
+            downloadButton.href = presentations[group].file;
+            downloadButton.style.display = "inline-block";
+        }
+    </script>
+    <script>
+        window.onload = function() {
+            let savedCode = localStorage.getItem("customCode");
+            if (savedCode) {
+                document.body.insertAdjacentHTML("beforeend", savedCode);
+            }
+        };
+    </script>
+    
+
+
+
+
+</body>
+</html>
